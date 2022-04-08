@@ -2,4 +2,4 @@ mouse x 2
 table x 4
 router x 2
 glass x 2
-speakers x 2
+speakers x 4
