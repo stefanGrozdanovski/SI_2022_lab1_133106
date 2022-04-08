@@ -1,34 +1,57 @@
 git clone https://github.com/stefanGrozdanovski/SI_2022_lab1_133106.git .
+    - Kloniranje na remote repo lokalno
 git add .
 git commit -m "Add 5 items to the shopping list"
 git push
+    - Vnesuvanje na site produkti (5)
 git add .
 git commit -m "Add quantities to the items."
 git push
+    - Promena na kolichina na sekoj od produktite
 git checkout -b branch1
+    - Kreiranje nova granka lokalno, 'branch1'
 git checkout -b branch2
+    - Kreiranje nova granka lokalno, 'branch2'
 git push -u origin branch1
+    - Vmetnuvanje 'branch1' do remote repo
 git push -u origin branch2
+    - Vmetnuvanje 'branch2' do remote repo
 git checkout branch1
+    - Promena na granka 'branch1'
 git add .
 git commit -m "Change quantity of item #5"
 git push
+    - Promena na kolichina na produktot #5
 git checkout master
+    - Promena na granka 'master'
 git add .
 git commit -m "Change quantity of item #2"
 git push
+    - Promena na kolichina na produktot #2
 git checkout branch2
+    - Promena na granka 'branch2'
 git add .
 git commit -m "Modify item #4"
 git push
+    - Promena na produktot #4
 git add .
 git commit --amend -m "Modify item #4 and add item #6"
 git commit
 git push
+    - Promena na posledniot commit so poraka "Modify item #4 and add item #6"
 git checkout master
+    - Promena na granka 'master'
 git merge branch1
+    - Spojuvanje na granka 'master' so 'branch1'
 git merge branch2
+    - Spojuvanje na granka 'master' so 'branch2'
 git pull
 git add .
 git commit -m "merge"
 git push
+    - Objasnuvanje:
+      Pri spojuvanje na branch2 so master se sluchi konflikt,
+      odnosno grankata 'master' ne gi prifati promenite koi bea
+      razlichni edna so druga i so pomosh na git pull i vnesuvanje
+      na nov commit so porakata "merge" grankata 'master' gi prifati
+      promenite od grankata 'branch2' i e sinhronizirana so najnovite promeni. 
