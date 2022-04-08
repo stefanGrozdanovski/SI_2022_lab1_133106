@@ -1,5 +1,5 @@
 mouse x 2
 table x 2
 router x 2
-glass x 2
+glass x 4
 speakers x 2
